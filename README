@@ -1,0 +1,28 @@
+# Python Microservice Workout
+
+### how to run docker
+
+```
+docker-compose up
+```
+
+### if there is an issue with compose up or connection
+
+```
+docker-compose down
+docker system prune --force --volumes
+docker-compose up -d
+```
+
+https://stackoverflow.com/questions/48194404/docker-compose-up-on-windows-failed-with-error-on-mysql-container-step
+
+
+### how to build
+```
+docker-compose build
+```
+
+### how to generate migrations
+```
+docker-compose run web alembic revision --autogenerate -m "${migrationMessage}"
+```

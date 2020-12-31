@@ -2,9 +2,9 @@
 
 ### how to run docker
 
-`
+```
 docker-compose up
-`
+```
 
 ### if there is an issue with compose up or connection
 
